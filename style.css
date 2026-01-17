@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+body {
+    font-family: "Google Sans", sans-serif;
+}
+
+h1 {
+    width: calc(100vw - 48px);
+    max-width: 680px;
+    margin: 48px auto 0 auto;
+}
+
+hr {
+    height: 3px;
+    background: #ececec;
+    border: none;
+    border-radius: 10px;
+    width: calc(100vw - 48px);
+    max-width: 680px;
+    margin: 24px auto;
+}
+
+.block {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100vw - 48px);
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+h2 {
+    margin: 0 40px 0 0;
+    text-shadow: 0 0 12px #fff;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-right: 64px;
+}
+
+ul li p {
+    margin: 8px 0;
+    text-shadow: 0 0 12px #fff;
+}
+
+.copy {
+    background: #ececec;
+    border-radius: 20px;
+    height: min-content;
+    padding: 8px;
+}
+
+.copy h3 {
+    background: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 8px 16px;
+    border-radius: 12px;
+}
+
+.copy button {
+    background: #0084ff;
+    border: none;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 12px;
+    margin-top: 8px;
+    transition: .25s;
+}
+
+.copy button:hover {
+    background: #0073f7;
+}
+
+.copy button p {
+    color: #fff;
+    font-family: "Google Sans", sans-serif;
+    margin: 0;
+}
+
+.arrow {
+    width: 108px;
+    position: absolute;
+    margin-left: -112px;
+    margin-top: 12px;
+    z-index: -1;
+    transform: rotate(20deg);
+}
+
+.sub {
+    width: calc(100vw - 48px);
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.point {
+    width: calc(100vw - 48px);
+    max-width: 680px;
+    margin: 0 auto 60px auto;
+}
+
+a {
+    color: #0084ff;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 480px) {
+    .block {
+        flex-direction: column-reverse;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .copy {
+        margin-bottom: 20px;
+    }
+
+    .copy button {
+        width: 100%;
+    }
+}
